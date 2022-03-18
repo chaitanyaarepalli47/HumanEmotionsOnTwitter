@@ -1,3 +1,12 @@
+# HumanEmotionsOnTwitter
+## CSCI 5828 Spring 2022 Project
+### Team Members
+1. Aayush Shah
+2. Devansh Mehta
+3. Chaitanya Arepalli
+4. Kunal Mehta
+5. Anuhya Mandalapu
+
 https://human-emotions-on-twitter.herokuapp.com/
 
 We are creating a webpage using react, Where we are creating a search bar and has a search button next to it.
