@@ -13,3 +13,6 @@ We are creating a webpage using react, Where we are creating a search bar and ha
 When text is entered in the search bar and the button is cliked the text gets echoed on the page.
 
 After this we deployed the webpage to heroku which can be accessed using the above link.
+
+# ArchitecturalDiagram
+<img src="C:\Users\AVK\Desktop\FSE_HW\my-app\public\Architectural-Diagram.jpeg" width="128"/> 
