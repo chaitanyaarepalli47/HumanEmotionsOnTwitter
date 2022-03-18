@@ -1,45 +1,41 @@
-// import React, {useState} from 'react'
-// import './SearchBar.css';
-
-// function SearchBar({placeholder,data}){
-//     const[searchTerm, setSearchTerm] = useState([]);
-
-//     const handleFilter = (event) =>{
-//         const searchWord = event.target.value;
-//         console.log(searchWord);
-//         console.log(event.target);
-//     }
-//     return (
-//         <div className = "search">
-//             <form onSubmit={handleFilter}>
-//             <div className = "searchInputs">
-//                 <input type ="text" placeholder = {placeholder} onChange = {event => {setSearchTerm(event.target.value)}}/>
-//             </div>
-//             </form>
-//         </div>
-//     )
-// }
-
-// export default SearchBar
-
 import React, {useState} from 'react'
 import './SearchBar.css';
+import ReactDOM from 'react-dom'
 
-function SearchBar({placeholder,data}){
-    const[searchTerm, setSearchTerm] = useState([]);
-
-    const handleFilter = (event) =>{
-        const searchWord = event.target.value;
-        console.log(searchWord);
-        console.log(event.target);
+class NameForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: ''};
+  
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
     }
-    return (
-        <div className = "search">
-            <div className = "searchInputs">
-                <input type ="text" placeholder = {placeholder} onSubmit = {handleFilter}/>
-            </div>
-        </div>
-    )
-}
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+  
+    handleSubmit(event) {
+      alert('A name was submitted: ' + this.state.value);
+      event.preventDefault();
+    }
+  
+    render() {
+      return (
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Name:
+            <input type="text" value={this.state.value} onChange={this.handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      );
+    }
+  }
+  
+  ReactDOM.render(
+    <NameForm />,
+    document.getElementById('root')
+  );
 
-export default SearchBar
+  export default NameForm
