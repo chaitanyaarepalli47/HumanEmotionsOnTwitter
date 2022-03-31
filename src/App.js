@@ -1,10 +1,16 @@
-import './App.css';
-import SearchBar from './Components/searchbar';
+import "./App.css";
+import Header from "./Components/Header";
+import Sidebar from "./Components/Sidebar";
+import Home from "./Components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <SearchBar placeholder = "Enter Something"/>
+    <div>
+      <Header />
+      <div className="main-content">
+        <Sidebar />
+        <Home />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+.heading-sentence {
+  margin-top: 3.75rem;
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #2c363f;
+}
+
+.input-fields {
+  margin-top: 1rem;
+}
+
+.username-label {
+  font-size: 1.5rem;
+  color: #2c363f;
+}
+
+.username-input {
+  width: 25rem;
+  height: 3rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #fffbfa;
+  box-shadow: 5px 10px 20px rgba(40, 11, 15, 0.09),
+    -2.5px -5px 10px rgba(40, 11, 15, 0.04);
+}
+
+.action-buttons {
+  margin-top: 2.5rem;
+}
+
+.show-tweets-button,
+.analyse-profile-button {
+  height: 3.75rem;
+  width: auto;
+  background-image: linear-gradient(to bottom right, #832232, #c01632);
+  border: none;
+  color: #fffbfa;
+  border-radius: 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  padding: 0 1rem;
+}
+
+.analyse-profile-button {
+  margin-left: 2.5rem;
+}

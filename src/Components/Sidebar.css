@@ -1,0 +1,27 @@
+.sidebar-base {
+  width: 18.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px rgba(40, 11, 15, 0.04);
+  margin-right: 2.5rem;
+}
+
+.sidebar-content {
+  height: 3.75rem;
+  margin-left: 2.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.sidebar-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  color: #2c363f;
+}
+
+.bx {
+  font-size: 2rem;
+  color: #2c363f;
+}
