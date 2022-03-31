@@ -24,6 +24,13 @@
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  box-shadow: 5px 10px 20px rgba(40, 11, 15, 0.25);
 }
 
 .login-button {

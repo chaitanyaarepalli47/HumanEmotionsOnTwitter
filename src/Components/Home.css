@@ -45,6 +45,14 @@
   font-weight: 700;
   letter-spacing: 0.1rem;
   padding: 0 1rem;
+  box-shadow: 5px 10px 20px rgba(40, 11, 15, 0.16);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.show-tweets-button:hover,
+.analyse-profile-button:hover {
+  box-shadow: 10px 20px 40px rgba(40, 11, 15, 0.5);
 }
 
 .analyse-profile-button {
